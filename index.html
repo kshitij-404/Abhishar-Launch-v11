@@ -7,16 +7,51 @@
     <title>Document</title>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="comic.css">
   </head>
   <body>
       
     <div class="scroll-down"></div>
-    <div id="container"><video src="https://aasf.azureedge.net/aasf/Abhishar-v10-Laptop.m4v" id="myVideo" autoplay="" controls=""></video>
+
+    <!-- video starts from here -->
+
+    <div id="container">
+      <video src="https://aasf.azureedge.net/aasf/Abhishar-v10-Laptop.m4v" id="myVideo" autoplay="" controls="">
+      </video>
     </div>
-    <!-- <div class="flip-book">
-        <iframe style="width:700px;height:400px" src="https://online.fliphtml5.com/kjndm/ohzq/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
-    </div> -->
+
+    <!-- video ends here -->
+
+    <!-- comic starts from here -->
+
+    <div class="wrapper">
+
+    <div class="container-comic">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </d/div>
+
+    <di <div class="text-box">
+      <span class="text">A Jog Down</span>
+      <span class="text">The Sports Lane</span>
+    </div>
+
+  </div>
+
+    <!-- comic ends here -->
+
+    <!-- pdf-reader starts from here -->
+
     <div id="pdf-reader"></div>
+
+    <!-- pdf-reader ends here -->
+
     <script>
       AOS.init();
       var pdfReader = document.createElement("iframe");
@@ -35,5 +70,6 @@
       }
       document.getElementById("pdf-reader").appendChild(pdfReader);
     </script>
+    <script src="app.js"></script>
   </body>
 </html>
