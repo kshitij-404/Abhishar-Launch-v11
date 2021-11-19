@@ -7,7 +7,32 @@
     <title>Abhishar v11.0</title>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="app.js"></script>
+    <script>
+      var x = window.matchMedia("(max-width: 600px)");
+      var video = document.createElement("video");
+      if (x.matches) {
+        video.src = "https://aasf.azureedge.net/aasf/Abhishar-v10-Phone.m4v"; //lite
+      } else {
+        video.src = "https://aasf.azureedge.net/aasf/Abhishar-v10-Laptop.m4v"; //hi-res
+      }
+      video.id = "myVideo";
+      video.autoplay = true;
+      video.muted = true;
+      video.type = "video/mp4";
+      video.controls = true;
+      setTimeout(function () {
+        document.getElementById("container").innerHTML = "";
+        document.getElementById("container").appendChild(video);
+      }, 5000);
+    </script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="./assests/favion.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="comic.css" />
     <link rel="stylesheet" href="carousel.css" />
@@ -54,68 +79,89 @@
     <div class="comic_book_mob">
       <div class="comic_mob1">
         <div class="comic_mob1_sub">
-          <img src="./assests/baseball_v.png" alt=""width=100% height= 200px>
+          <img
+            src="./assests/baseball_v.png"
+            alt=""
+            width="100%"
+            height="175px"
+          />
         </div>
         <div class="comic_mob1_sub">
-          <img src="./assests/badminton_1.png.jpg" alt=""width=100% height= 200px>
+          <img
+            src="./assests/badminton_1.png.jpg"
+            alt=""
+            width="100%"
+            height="175px"
+          />
         </div>
         <div class="comic_mob1_sub">
-          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b7e6a619586283.5604087855c33.jpg" alt=""width=100% height= 200px>
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/b7e6a619586283.5604087855c33.jpg"
+            alt=""
+            width="100%"
+            height="175px"
+          />
         </div>
       </div>
 
       <div>
-        <img src="./assests/header.png" alt="" width=100% height=400px>
+        <img src="./assests/header.png" alt="" width="100%" height="400px" />
       </div>
 
       <div class="comic_mob1">
         <div class="comic_mob1_sub">
-      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c3a36119590943.56040a69e7bfe.jpg" alt=""width=100% height= 200px>
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/c3a36119590943.56040a69e7bfe.jpg"
+            alt=""
+            width="100%"
+            height="175px"
+          />
         </div>
         <div class="comic_mob1_sub">
-          <img src="https://i.ibb.co/4Nvnj3S/football.png" alt="" width=100% height= 200px>
+          <img
+            src="https://i.ibb.co/4Nvnj3S/football.png"
+            alt=""
+            width="100%"
+            height="175px"
+          />
         </div>
         <div class="comic_mob1_sub">
-          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8b60af12683873.5626c2d12354f.png" alt="" width=100% height= 200px>
+          <img
+            src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8b60af12683873.5626c2d12354f.png"
+            alt=""
+            width="100%"
+            height="175px"
+          />
         </div>
       </div>
     </div>
-    
 
     <!-- comic ends here -->
 
     <!-- Carousel starts here -->
 
     <div class="topics-1">
-      
-      <div
-        class="topic-title-1 aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-      Abhishar is the annual magazine of AASF and also the prestigious institute ABV-IIITM Gwalior. It provides students not only of the institute but also all across the country showcase their literary talents.
+      <div class="topic-title-1" data-aos="fade-up" data-aos-duration="1000">
+        Abhishar is the annual magazine of AASF and also the prestigious
+        institute ABV-IIITM Gwalior. It provides students not only of the
+        institute but also all across the country showcase their literary
+        talents.
       </div>
     </div>
 
     <div class="topics-2">
-      <div
-        class="topic-title-2 aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-      Late Abhinav Saxena and Late Tushar Sharma are two indispensable members of AASF. The Forum's and institute's annual magazine Abhishar has been named in the loving memory of them.
+      <div class="topic-title-2" data-aos="fade-right" data-aos-duration="1000">
+        Late Abhinav Saxena and Late Tushar Sharma are two indispensable members
+        of AASF. The Forum's and institute's annual magazine Abhishar has been
+        named in the loving memory of them.
       </div>
-      
     </div>
 
-    <div class="topics-3">
-      
-      <div
-        class="topic-title-3 aos-init aos-animate"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-      Abhigyan Abhikaushalam Students’ Forum aims to construct this shoreline and helps in constructing the further path. This forum aims in providing the right kind of knowledge to the students and development of skills.
+    <div class="topics-1">
+      <div class="topic-title-1" data-aos="fade-left" data-aos-duration="1000">
+        Abhigyan Abhikaushalam Students’ Forum aims to construct this shoreline
+        and helps in constructing the further path. This forum aims in providing
+        the right kind of knowledge to the students and development of skills.
       </div>
     </div>
 
@@ -123,43 +169,98 @@
 
     <!-- rotation starts here -->
 
-    <base src="./assests/basketball.png" />
-    <div id="carousel">
-      <figure id="spinner">
-        <img class="black_rot" src="./assests/basketball.png" alt />
-        <img class="black_rot" src="./assests/badminton.png" alt />
-        <img class="black_rot" src="./assests/boxing.png" alt />
-        <img class="black_rot" src="./assests/esports.png" alt />
-        <img class="black_rot" src="./assests/football_1.png" alt />
-        <img class="black_rot" src="./assests/racing.png" alt />
-        <img class="black_rot" src="./assests/volley.png" alt />
-        <img class="black_rot" src="./assests/esports.png" alt />
-      </figure>
+    <div class="rotating-sports">
+      <base src="./assests/basketball.png" />
+      <div id="carousel">
+        <figure id="spinner">
+          <img class="black_rot" src="./assests/basketball.png" alt />
+          <img class="black_rot" src="./assests/badminton.png" alt />
+          <img class="black_rot" src="./assests/boxing.png" alt />
+          <img class="black_rot" src="./assests/esports.png" alt />
+          <img class="black_rot" src="./assests/football_1.png" alt />
+          <img class="black_rot" src="./assests/racing.png" alt />
+          <img class="black_rot" src="./assests/volley.png" alt />
+          <img class="black_rot" src="./assests/esports.png" alt />
+        </figure>
+      </div>
+      <span style="float: left" class="ss-icon" onclick="galleryspin('-')"
+        >&lt;</span
+      >
+      <span style="float: right" class="ss-icon" onclick="galleryspin('')"
+        >&gt;</span
+      >
     </div>
-    <span style="float: left" class="ss-icon" onclick="galleryspin('-')"
-      >&lt;</span
-    >
-    <span style="float: right" class="ss-icon" onclick="galleryspin('')"
-      >&gt;</span
-    >
 
     <!-- rotation ends here -->
 
-    <!-- buttons start here -->
-    <div class="pdf-box">
-      <div>
-        <a href="./Abhishar_v10.0_High_Res.pdf" class="button" download="">
-          <img src="./assests/high_res.png" alt="">
-        </a>
-        <a href="./Abhishar_v10.0_High_Res.pdf" class="button_txt" download="">High-Res Version </a>
-      </div>
-      <div >
-        <a href="./Abhishar_v10.0_Lite.pdf" class="button" download="">
-          <img src="./assests/low_res.png" alt="">
-        </a>
-        <a href="./Abhishar_v10.0_Lite.pdf" class="button_txt" download="">Lite Version </a>
+    <!-- mobile rotation starts here -->
+
+    <div class="comic_book_mob rotation-mob">
+      <div class="comic_mob1">
+        <div class="comic_mob1_sub">
+          <img
+            src="./assests/basketball.png"
+            alt=""
+            width="100%"
+            height="175px"
+          />
+        </div>
+        <div class="comic_mob1_sub">
+          <img
+            src="./assests/badminton.png"
+            alt=""
+            width="100%"
+            height="175px"
+          />
+        </div>
+        <div class="comic_mob1_sub">
+          <img src="./assests/boxing.png" alt="" width="100%" height="175px" />
+        </div>
       </div>
     </div>
+
+    <div class="comic_book_mob rotation-mob">
+      <div class="comic_mob1">
+        <div class="comic_mob1_sub">
+          <img
+            src="./assests/football_1.png"
+            alt=""
+            width="100%"
+            height="175px"
+          />
+        </div>
+        <div class="comic_mob1_sub">
+          <img src="./assests/racing.png" alt="" width="100%" height="175px" />
+        </div>
+        <div class="comic_mob1_sub">
+          <img src="./assests/volley.png" alt="" width="100%" height="175px" />
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile rotation ends here -->
+
+    <!-- buttons start here -->
+
+    <div class="pdf-box">
+      <div class="button">
+        <a href="./Abhishar_v10.0_High_Res.pdf" download>
+          <img
+            src="assests/high_res.png"
+            alt="high_res"
+            class="high_res_button"
+          />
+        </a>
+        <a href="./Abhishar_v10.0_High_Res.pdf" download>High-Res Version </a>
+      </div>
+      <div class="button">
+        <a href="./Abhishar_v10.0_Lite.pdf" download>
+          <img src="assests/low_res.png" alt="low_res" class="low_res_button" />
+        </a>
+        <a href="./Abhishar_v10.0_Lite.pdf" download> Lite Version </a>
+      </div>
+    </div>
+
     <!-- buttons end here -->
 
     <!-- pdf-reader starts from here -->
@@ -178,11 +279,11 @@
       pdfReader.setAttribute("frameborder", "0");
       pdfReader.setAttribute("allowtransparency", "true");
       pdfReader.setAttribute("allowfullscreen", "true");
-      var x = window.matchMedia("(max-width: 600px)");
+      var x = window.matchMedia("(max-width: 700px)");
       if (x.matches) {
-        pdfReader.src = "https://online.fliphtml5.com/cwbhw/kmca/"; //lite
+        pdfReader.src = "https://online.fliphtml5.com/erdqd/nuvy/"; //lite
       } else {
-        pdfReader.src = "https://online.fliphtml5.com/cwbhw/kgcb/"; //hi-res
+        pdfReader.src = "https://online.fliphtml5.com/erdqd/nuvy/"; //hi-res
       }
       document.getElementById("pdf-reader").appendChild(pdfReader);
     </script>

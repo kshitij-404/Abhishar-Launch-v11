@@ -22,13 +22,11 @@ body {
   height: 200px;
   margin-top: 6px;
   margin-bottom: 6px;
-  
 }
 .comic_mob1_sub {
   width: 33%;
   height: 200px;
   margin: 3px 3px 3px 3px;
-  
 }
 .container-comic {
   display: grid;
@@ -72,7 +70,7 @@ body {
 .item:nth-child(5) {
   background-color: #2c3e50;
   background-image: url(./assests/header.png);
-  background-position: center;  
+  background-position: center;
 }
 .item:nth-child(6) {
   background-color: #27ae60;
@@ -194,5 +192,8 @@ body {
   .comic_book_mob {
     visibility: visible;
     height: 812px;
+  }
+  .rotation-mob {
+    height: 200px;
   }
 }

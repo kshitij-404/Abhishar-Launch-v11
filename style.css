@@ -10,6 +10,7 @@ html {
 }
 body {
   background-color: #000000;
+  font-family: "poppins";
 }
 
 /* video and flip book */
@@ -155,7 +156,6 @@ body {
   }
 }
 
-
 /* video and flip book ends */
 
 /* comic cards */
@@ -164,7 +164,7 @@ body {
 
 /* rotating cards */
 
-.wrapper {
+/* .wrapper {
   transform: rotate3d(0, 0, 0, 0);
   transform-origin: center center;
   transform-style: preserve-3d;
@@ -173,11 +173,11 @@ body {
 
 .wrapper {
   box-shadow: -10px 5px 20px rgba(black, 0.5);
-  /* max-width: 400px; */
+  max-width: 400px;
   margin: 2rem auto;
   padding: 10px;
   background: black;
-}
+} */
 
 @keyframes rotatediv {
   10% {
@@ -192,18 +192,84 @@ body {
 }
 
 /* rotating cards end */
+
+/* button css */
+
 .pdf-box {
   display: flex;
-  flex-direction: row;
   height: 40vh;
   background-color: #000000;
   justify-content: space-around;
   align-items: center;
 }
-.button{
-  text-decoration: none;
+.button {
+  height: 200px;
+  width: 200px;
+  fill: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
 }
-.button_txt {
+
+.button > a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
+}
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in-out;
+}
+
+.high_res_button,
+.low_res_button {
+  height: 150px;
+}
+
+@media only screen and (max-width: 700px) {
+  .pdf-box {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    background-color: #000000;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    height: 100px;
+    width: 100px;
+    fill: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .high_res_button,
+  .low_res_button {
+    height: 80px;
+  }
+}
+
+/* button css ends */
+
+#pdf-reader {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+  #pdf-reader {
+    margin-top: 20px;
+  }
 }

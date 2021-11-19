@@ -61,8 +61,69 @@ div#carousel ~ span:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px){
-  .black_rot{
+@media only screen and (max-width: 700px) {
+  .black_rot {
     width: 100%;
+  }
+}
+
+/* mobile css */
+
+h1 {
+  color: white;
+}
+
+.carousel-sports-mobile {
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  width: 100vw;
+  visibility: hidden;
+}
+
+.carousel-sports-mobile > .container-sports-mobile {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: transform 600ms;
+}
+
+.carousel-sports-mobile > nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.carousel-sports-mobile > nav a {
+  color: #000;
+  font-size: 14px;
+  opacity: 0.2;
+  text-decoration: none;
+}
+
+.carousel-sports-mobile > nav a:hover {
+  opacity: 0.5;
+}
+
+.carousel-sports-mobile > nav a.current {
+  opacity: 1;
+}
+
+.carousel-sports-mobile .slide-sports-mobile {
+  flex-shrink: 0;
+  line-height: 1.4;
+  text-align: center;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 700px) {
+  .rotating-sports {
+    visibility: hidden;
+    height: 0px;
   }
 }
