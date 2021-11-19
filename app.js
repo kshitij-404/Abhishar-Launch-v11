@@ -1,17 +1,19 @@
-document.getElementById('toggle').addEventListener('click', function () {
-    if (document.body.classList.contains("no-images")) {
-     document.body.classList.remove("no-images");
-    } else {
-        document.body.classList.add("no-images");
-    }
-  });
-  
-  document.getElementById('toggle-animation').addEventListener('click', function () {
-    if (document.body.classList.contains("no-animation")) {
-     document.body.classList.remove("no-animation");
-    } else {
-        document.body.classList.add("no-animation");
-    }
-  });
-
-  
+var angle = 0;
+function galleryspin(sign) {
+  spinner = document.querySelector("#spinner");
+  if (!sign) {
+    angle = angle + 45;
+  } else {
+    angle = angle - 45;
+  }
+  spinner.setAttribute(
+    "style",
+    "-webkit-transform: rotateY(" +
+      angle +
+      "deg); -moz-transform: rotateY(" +
+      angle +
+      "deg); transform: rotateY(" +
+      angle +
+      "deg);"
+  );
+}
