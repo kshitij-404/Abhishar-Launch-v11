@@ -1,0 +1,129 @@
+div#carousel {
+  perspective: 1200px;
+  background: #000000;
+  padding-top: 3rem;
+  font-size: 0;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+figure#spinner {
+  transform-style: preserve-3d;
+  height: 500px;
+  transform-origin: 50% 50% -500px;
+  transition: 1s;
+}
+figure#spinner img {
+  width: 40%;
+  max-width: 425px;
+  position: absolute;
+  left: 30%;
+  transform-origin: 50% 50% -500px;
+  outline: 1px solid transparent;
+}
+figure#spinner img:nth-child(1) {
+  transform: rotateY(0deg);
+}
+figure#spinner img:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+figure#spinner img:nth-child(3) {
+  transform: rotateY(-90deg);
+}
+figure#spinner img:nth-child(4) {
+  transform: rotateY(-135deg);
+}
+figure#spinner img:nth-child(5) {
+  transform: rotateY(-180deg);
+}
+figure#spinner img:nth-child(6) {
+  transform: rotateY(-225deg);
+}
+figure#spinner img:nth-child(7) {
+  transform: rotateY(-270deg);
+}
+figure#spinner img:nth-child(8) {
+  transform: rotateY(-315deg);
+}
+div#carousel ~ span {
+  color: #fff;
+  margin: 5%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  transition: 0.6s color;
+  position: relative;
+  margin-top: -6rem;
+  border-bottom: none;
+  line-height: 0;
+}
+div#carousel ~ span:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .black_rot {
+    width: 100%;
+  }
+}
+
+/* mobile css */
+
+h1 {
+  color: white;
+}
+
+.carousel-sports-mobile {
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 40px 0;
+  position: relative;
+  width: 100vw;
+  visibility: hidden;
+}
+
+.carousel-sports-mobile > .container-sports-mobile {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  transition: transform 600ms;
+}
+
+.carousel-sports-mobile > nav {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  z-index: 1;
+}
+
+.carousel-sports-mobile > nav a {
+  color: #000;
+  font-size: 14px;
+  opacity: 0.2;
+  text-decoration: none;
+}
+
+.carousel-sports-mobile > nav a:hover {
+  opacity: 0.5;
+}
+
+.carousel-sports-mobile > nav a.current {
+  opacity: 1;
+}
+
+.carousel-sports-mobile .slide-sports-mobile {
+  flex-shrink: 0;
+  line-height: 1.4;
+  text-align: center;
+  width: 100vw;
+}
+
+@media only screen and (max-width: 700px) {
+  .rotating-sports {
+    visibility: hidden;
+    height: 0px;
+  }
+}
