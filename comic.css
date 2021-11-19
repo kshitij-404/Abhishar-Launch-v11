@@ -32,8 +32,8 @@ body {
 }
 .item:nth-child(2) {
   background-color: #3498db;
-  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/21fbda125160805.61136448d4198.jpg);
-  background-position: center 35%;
+  background-image: url(https://i.ibb.co/kQm2RNk/Untitled-4-1.png);
+  background-position: center ;
 }
 .item:nth-child(3) {
   background-color: #bdc3c7;
@@ -59,9 +59,8 @@ body {
 .item:nth-child(7) {
   background-color: 
   #9c9a7b;
-  background-image: url();
-  background-position: left 10% top 30%;
-  background-size: 50%;
+  background-image: url(https://i.ibb.co/4Nvnj3S/football.png);
+  background-position:top;
 }
 .item:nth-child(8) {
   background-color: #000000;
