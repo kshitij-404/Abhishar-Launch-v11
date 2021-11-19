@@ -5,7 +5,30 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #2c3e50;
+  background-color: #000000;
+}
+.comic_book {
+  margin-top: 10px;
+}
+.comic_book_mob {
+  visibility: hidden;
+  height: 0px;
+}
+.comic_mob1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  height: 200px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  
+}
+.comic_mob1_sub {
+  width: 33%;
+  height: 200px;
+  margin: 3px 3px 3px 3px;
+  
 }
 .container-comic {
   display: grid;
@@ -26,14 +49,14 @@ body {
 /*** Images With Color Fallbacks ***/
 .item:nth-child(1) {
   background-color: #e74c3c;
-  background-image: url();
+  background-image: url("./assests/baseball_v.png");
   background-size: 100%;
   background-position: center top;
 }
 .item:nth-child(2) {
   background-color: #3498db;
   background-image: url(https://i.ibb.co/kQm2RNk/Untitled-4-1.png);
-  background-position: center ;
+  background-position: center;
 }
 .item:nth-child(3) {
   background-color: #bdc3c7;
@@ -48,8 +71,8 @@ body {
 }
 .item:nth-child(5) {
   background-color: #2c3e50;
-  background-image: url(http://image.noelshack.com/fichiers/2018/46/1/1542053976-stanleefol5.png);
-  background-position: center 20px;
+  background-image: url(./assests/header.png);
+  background-position: center;  
 }
 .item:nth-child(6) {
   background-color: #27ae60;
@@ -57,10 +80,10 @@ body {
   background-position: top 20%;
 }
 .item:nth-child(7) {
-  background-color: 
-  #9c9a7b;
-  background-image: url(https://i.ibb.co/4Nvnj3S/football.png);
-  background-position:top;
+  background-color: #9c9a7b;
+  background-image: url(./assests/football.png);
+  background-position: left top;
+  background-size: 85%;
 }
 .item:nth-child(8) {
   background-color: #000000;
@@ -160,5 +183,16 @@ body {
 @media only screen and (max-width: 550px) {
   .text {
     font-size: 2.8vmax;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .comic_book {
+    visibility: hidden;
+    height: 0px;
+  }
+  .comic_book_mob {
+    visibility: visible;
+    height: 812px;
   }
 }

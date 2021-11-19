@@ -6,10 +6,10 @@
 html {
   overflow: scroll;
   overflow-x: hidden;
-  background-color: #161843;
+  background-color: #000000;
 }
 body {
-  background-color: #161843;
+  background-color: #000000;
 }
 
 /* video and flip book */
@@ -99,6 +99,8 @@ body {
   }
 }
 #container {
+  padding: 0px;
+  margin: 0px;
   height: 100vh;
   background-color: black;
   color: white;
@@ -133,7 +135,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #container {
     height: 30vh;
     background-color: black;
@@ -152,13 +154,7 @@ body {
     display: none;
   }
 }
-.pdf-box {
-  display: flex;
-  height: 50vh;
-  flex-direction: column;
-  background-color: #161843;
-  margin-bottom: 20px;
-}
+
 
 /* video and flip book ends */
 
@@ -196,3 +192,18 @@ body {
 }
 
 /* rotating cards end */
+.pdf-box {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  background-color: #000000;
+  justify-content: space-around;
+  align-items: center;
+}
+.button{
+  text-decoration: none;
+}
+.button_txt {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
