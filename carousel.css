@@ -1,7 +1,7 @@
 .topics-1 {
   height: 45vh;
   display: flex;
-  background-image: url("./assests/sport-bg.png");
+  background-image: url("./assets/sport-bg.webp");
   background-size: cover;
 }
 @keyframes spin {
@@ -81,7 +81,7 @@
 .topics-3 {
   height: 45vh;
   display: flex;
-  background-image: url("./assests/sport-bg.png");
+  background-image: url("./assets/sport-bg.webp");
   background-size: cover;
 }
 .topic-img-3 > img {
