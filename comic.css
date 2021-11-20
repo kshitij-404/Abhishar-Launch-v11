@@ -47,7 +47,7 @@ body {
 /*** Images With Color Fallbacks ***/
 .item:nth-child(1) {
   background-color: #e74c3c;
-  background-image: url("./assests/baseball_v.png");
+  background-image: url("./assets/baseball_v.webp");
   background-size: 100%;
   background-position: center top;
 }
@@ -69,7 +69,7 @@ body {
 }
 .item:nth-child(5) {
   background-color: #2c3e50;
-  background-image: url(./assests/header.png);
+  background-image: url(./assets/header.webp);
   background-position: center;
 }
 .item:nth-child(6) {
@@ -79,7 +79,7 @@ body {
 }
 .item:nth-child(7) {
   background-color: #9c9a7b;
-  background-image: url(./assests/football.png);
+  background-image: url(./assets/football.webp);
   background-position: left top;
   background-size: 85%;
 }
